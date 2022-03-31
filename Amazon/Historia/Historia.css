@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+
+  background-color: #f2f3f4;
+}
+
+/* ______________
+        nav
+_______________ */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  margin-top: 12px;
+}
+
+nav ul li > a {
+  display: block;
+  position: relative;
+  padding: 20px 15px 10px 15px;
+  text-decoration: none;
+
+  color: black;
+}
+
+nav ul li .link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  cursor: pointer;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+
+  background-color: #fc9708;
+}
+
+nav ul li .link:hover::before {
+  transform: scaleX(1);
+}
+
+.titulo {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  padding: 25px 100px 100px 100px;
+}
+
+.titulo-descripcion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.titulo-descripcion h1 {
+  font-family: monospace;
+  font-size: 5em;
+  text-align: center;
+  width: 100%;
+}
+
+span {
+  color: #fc9708;
+}
+
+.titulo-descripcion p {
+  font-size: 1.2em;
+  margin-top: 5em;
+}
+
+/*__________________
+    Linea del tiempo
+__________________ */
+
+section {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0 0 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 10px 50px;
+  margin-top: 70px;
+}
+
+.flex-container .text-section {
+  display: inline-block;
+  flex-direction: column;
+  padding: 0;
+  margin-left: 40px;
+  margin-right: 70px;
+}
+
+.flex-container .text-section h3 {
+  font-size: 2em;
+}
+
+.flex-container .text-section p {
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.flex-container .image {
+  display: inline-block;
+}
+
+.flex-container .image img {
+  width: 500px;
+}
+
+footer {
+  margin-top: 25px;
+}

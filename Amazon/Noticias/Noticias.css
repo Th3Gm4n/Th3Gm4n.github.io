@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6rem;
+  text-align: justify;
+  background-color: #eaeded;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 1.5rem 0;
+  border: 0 0 1px 0;
+  position: sticky;
+  top: 0;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
+
+.container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.container2 {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.container2 h2 {
+  text-align: center;
+}
+
+.Logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo-nav-container img {
+  width: 7rem;
+  padding: 0;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 30px;
+}
+
+.navigation ul li a:hover {
+  background-color: #fc9708;
+}
+
+span {
+  color: #fc9708;
+}
+
+section article {
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
+}
+
+section article:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+section article h2,
+section article p {
+  margin: 1rem;
+}
+
+footer {
+  background-color: #222;
+  padding: 3rem;
+  color: white;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: right;
+}
+
+footer a:hover {
+  color: cornflowerblue;
+}
